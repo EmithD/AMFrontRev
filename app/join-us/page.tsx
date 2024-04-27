@@ -12,20 +12,23 @@ export default function JoinPage() {
 			<h1 className={title()}>Join Us</h1>
 			<div className="">
 				<div className="pb-4 pt-4">
-					<h1 className={title({ color: "cyan", size: "sm", fullWidth: true })}>All we need is your email</h1>
+					<h1 className={title({ color: "cyan", size: "sm"})}>All we need is your email</h1>
 				</div>
-				<form action="" className="flex flex-row gap-10">
+				<form action="" className="flex flex-row gap-6">
 					<Input
 					isRequired
 					type="email"
 					label="Email"
-					defaultValue="email@email.com"
+					placeholder="Enter your email"
 					className="max-w-full"
 					/>
-					<div className="pt-2">
-						<Button type="submit">Join</Button>
+					<div className="pt-2 ">
+						<Button className="bg-gradient-to-tr from-slate-800 to-lime-200" type="submit">Register</Button>
 					</div>
 				</form>
+				<div className="pt-2">
+					<p>Already a user? <Link href={'/login'}>Login</Link></p>
+				</div>
 			</div>
 
 		</div>
