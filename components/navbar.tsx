@@ -93,14 +93,23 @@ export const Navbar = () => {
 					<ThemeSwitch />
 				</NavbarItem>
 				<NavbarItem className="hidden lg:flex">{searchInput}</NavbarItem>
-				<NavbarItem className="hidden md:flex">
+				<NavbarItem className="hidden md:flex gap-4">
 					<Button
 						as={Link}
 						className="bg-gradient-to-tr from-pink-500 to-yellow-500 text-white shadow-l"
 						href={siteConfig.links.join}
 						variant="flat"
 					>
-						Join
+						Register
+					</Button>
+
+					<Button
+						as={Link}
+						className="bg-transparent text-white shadow-l"
+						href={siteConfig.links.login}
+						variant="bordered"
+					>
+						Login
 					</Button>
 
 				</NavbarItem>

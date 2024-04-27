@@ -64,6 +64,7 @@ export const siteConfig = {
 		twitter: "https://twitter.com/VeloxalYT",
 		docs: "https://nextui.org",
 		discord: "https://discord.com/",
-    	join: "/join-us"
+    	join: "/join-us",
+		login: "/login"
 	},
 };
