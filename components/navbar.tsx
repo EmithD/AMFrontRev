@@ -27,8 +27,6 @@ import {
 	SearchIcon,
 } from "@/components/icons";
 
-import { Logo } from "@/components/icons";
-
 export const Navbar = () => {
 	const searchInput = (
 		<Input
@@ -56,8 +54,8 @@ export const Navbar = () => {
 			<NavbarContent className="basis-1/5 sm:basis-full" justify="start">
 				<NavbarBrand as="li" className="gap-3 max-w-fit">
 					<NextLink className="flex justify-start items-center gap-1" href="/">
-						<Logo />
-						<p className="font-bold text-inherit">AM</p>
+						LOGO HERE
+						{/* <p className="font-bold text-inherit">AM</p> */}
 					</NextLink>
 				</NavbarBrand>
 				<ul className="hidden lg:flex gap-4 justify-start ml-2">
@@ -97,15 +95,14 @@ export const Navbar = () => {
 				<NavbarItem className="hidden lg:flex">{searchInput}</NavbarItem>
 				<NavbarItem className="hidden md:flex">
 					<Button
-            isExternal
 						as={Link}
-						className="text-sm font-normal text-default-600 bg-default-100"
-						href={siteConfig.links.sponsor}
-						startContent={<HeartFilledIcon className="text-danger" />}
+						className="bg-gradient-to-tr from-pink-500 to-yellow-500 text-white shadow-l"
+						href={siteConfig.links.join}
 						variant="flat"
 					>
-						Sponsor
+						Join
 					</Button>
+
 				</NavbarItem>
 			</NavbarContent>
 
@@ -116,6 +113,8 @@ export const Navbar = () => {
 				<ThemeSwitch />
 				<NavbarMenuToggle />
 			</NavbarContent>
+
+			{/* I have no idea what this below code does */}
 
 			<NavbarMenu>
 				{searchInput}
@@ -139,6 +138,8 @@ export const Navbar = () => {
 					))}
 				</div>
 			</NavbarMenu>
+
+
 		</NextUINavbar>
 	);
 };
